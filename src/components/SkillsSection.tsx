@@ -31,7 +31,6 @@ const skills = [
       { name: 'GitLab/GitHub' },
       { name: 'AppCenter' },
       { name: 'CodePush' },
-      { name: 'Repack' },
     ]
   },
   { 
@@ -93,7 +92,6 @@ const SkillsSection = () => {
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">WebSocket</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">CodePush</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">AppCenter</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Repack</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Native Modules</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">GitLab</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Detox</Badge>
