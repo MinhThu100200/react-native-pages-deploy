@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,21 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				codeblue: {
+					100: '#E3F2FD',
+					200: '#BBDEFB',
+					300: '#90CAF9',
+					400: '#64B5F6',
+					500: '#42A5F5',
+					600: '#2196F3',
+					700: '#1E88E5',
+					800: '#1565C0',
+					900: '#0D47A1'
+				},
+				reactnative: {
+					blue: '#61DAFB',
+					dark: '#282C34'
 				}
 			},
 			borderRadius: {
@@ -84,11 +100,36 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				typing: {
+					from: { width: '0' },
+					to: { width: '100%' }
+				},
+				blink: {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' }
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				gradient: {
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				typing: 'typing 3.5s steps(40, end)',
+				blink: 'blink 1s step-end infinite',
+				float: 'float 6s ease-in-out infinite',
+				gradient: 'gradient 15s ease infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'hero-pattern': 'linear-gradient(to right bottom, rgba(36, 62, 99, 0.8), rgba(22, 39, 64, 0.8))',
 			}
 		}
 	},
