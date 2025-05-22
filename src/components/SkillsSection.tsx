@@ -5,11 +5,16 @@ import { Badge } from '@/components/ui/badge';
 
 const skills = [
   { 
-    category: 'Frontend', 
+    category: 'Frontend & Mobile Development', 
     items: [
       { name: 'React Native' },
       { name: 'JavaScript' },
       { name: 'TypeScript' },
+      { name: 'GraphQL' },
+      { name: 'React Query' },
+      { name: 'RESTful APIs' },
+      { name: 'Native Modules' },
+      { name: 'Testing (Detox, Jest)' },
     ]
   },
   { 
@@ -18,27 +23,23 @@ const skills = [
       { name: 'Redux Saga' },
       { name: 'Redux Thunk' },
       { name: 'Zustand' },
-      { name: 'React Query' },
-      { name: 'GraphQL' },
     ]
   },
   { 
-    category: 'Mobile Development', 
+    category: 'CI/CD', 
     items: [
-      { name: 'Native Modules' },
-      { name: 'CodePush' },
+      { name: 'GitLab/GitHub' },
       { name: 'AppCenter' },
+      { name: 'CodePush' },
       { name: 'Repack' },
     ]
   },
   { 
     category: 'Other', 
     items: [
-      { name: 'Git & GitLab' },
-      { name: 'CI/CD' },
-      { name: 'Testing (Detox)' },
-      { name: 'RESTful APIs' },
       { name: 'WebSocket' },
+      { name: 'Firebase' },
+      { name: 'Atomic Design' },
     ]
   }
 ];
@@ -96,6 +97,7 @@ const SkillsSection = () => {
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Native Modules</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">GitLab</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Detox</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Jest</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Atomic Design</Badge>
           </div>
         </div>
