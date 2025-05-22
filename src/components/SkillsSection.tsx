@@ -2,47 +2,43 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
 
 const skills = [
   { 
     category: 'Frontend', 
     items: [
-      { name: 'React Native', level: 95 },
-      { name: 'React', level: 90 },
-      { name: 'JavaScript', level: 92 },
-      { name: 'TypeScript', level: 88 },
-      { name: 'Redux', level: 85 },
-    ]
-  },
-  { 
-    category: 'Mobile', 
-    items: [
-      { name: 'iOS Development', level: 80 },
-      { name: 'Android Development', level: 80 },
-      { name: 'React Navigation', level: 92 },
-      { name: 'Expo', level: 88 },
-      { name: 'App Deployment', level: 85 },
+      { name: 'React Native' },
+      { name: 'JavaScript' },
+      { name: 'TypeScript' },
     ]
   },
   { 
     category: 'State Management', 
     items: [
-      { name: 'Redux Saga', level: 90 },
-      { name: 'Redux Thunk', level: 90 },
-      { name: 'Zustand', level: 88 },
-      { name: 'React Query', level: 90 },
-      { name: 'GraphQL', level: 82 },
+      { name: 'Redux Saga' },
+      { name: 'Redux Thunk' },
+      { name: 'Zustand' },
+      { name: 'React Query' },
+      { name: 'GraphQL' },
+    ]
+  },
+  { 
+    category: 'Mobile Development', 
+    items: [
+      { name: 'Native Modules' },
+      { name: 'CodePush' },
+      { name: 'AppCenter' },
+      { name: 'Repack' },
     ]
   },
   { 
     category: 'Other', 
     items: [
-      { name: 'Git & GitLab', level: 90 },
-      { name: 'CI/CD', level: 85 },
-      { name: 'Testing (Detox)', level: 85 },
-      { name: 'RESTful APIs', level: 90 },
-      { name: 'WebSocket', level: 85 },
+      { name: 'Git & GitLab' },
+      { name: 'CI/CD' },
+      { name: 'Testing (Detox)' },
+      { name: 'RESTful APIs' },
+      { name: 'WebSocket' },
     ]
   }
 ];
@@ -65,15 +61,14 @@ const SkillsSection = () => {
             <Card key={index} className="bg-secondary/30 border-primary/20 hover:shadow-md hover:shadow-primary/10 transition-all duration-300">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-6 text-primary">{skillGroup.category}</h3>
-                <div className="space-y-6">
+                <div className="grid grid-cols-2 gap-3">
                   {skillGroup.items.map((skill, skillIndex) => (
-                    <div key={skillIndex}>
-                      <div className="flex justify-between mb-2">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <Progress value={skill.level} className="h-2 bg-secondary" />
-                    </div>
+                    <Badge 
+                      key={skillIndex}
+                      className="bg-secondary/50 text-foreground p-2 justify-center hover:bg-primary/20 transition-colors"
+                    >
+                      {skill.name}
+                    </Badge>
                   ))}
                 </div>
               </CardContent>
