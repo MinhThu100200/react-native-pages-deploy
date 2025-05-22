@@ -7,35 +7,35 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'E-Commerce Mobile App',
-    description: 'A complete e-commerce solution with product browsing, cart management, payment integration, and order tracking.',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1470&auto=format&fit=crop',
-    tags: ['React Native', 'Redux', 'Firebase', 'Stripe'],
-    githubUrl: 'https://github.com',
-    liveUrl: '#',
-  },
-  {
-    title: 'Health & Fitness Tracker',
-    description: 'A comprehensive fitness app with workout plans, progress tracking, nutrition logging, and social sharing features.',
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=1374&auto=format&fit=crop',
-    tags: ['React Native', 'TypeScript', 'GraphQL', 'Apple HealthKit'],
-    githubUrl: 'https://github.com',
-    liveUrl: '#',
-  },
-  {
-    title: 'Travel Companion',
-    description: 'An interactive travel app with trip planning, place discovery, itinerary management, and offline map functionality.',
-    image: 'https://images.unsplash.com/photo-1497681883844-82b4f0a359a4?q=80&w=1470&auto=format&fit=crop',
-    tags: ['React Native', 'Expo', 'Firebase', 'Google Maps API'],
-    githubUrl: 'https://github.com',
-    liveUrl: '#',
-  },
-  {
-    title: 'Social Media Platform',
-    description: 'A full-featured social networking app with user profiles, posts, comments, real-time chat, and media sharing.',
+    title: 'SOOP',
+    description: 'A livestream application connecting creators with audiences through high-quality live broadcasts and interactive features. Supports seamless video streaming, real-time communication, and monetization tools.',
     image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1374&auto=format&fit=crop',
-    tags: ['React Native', 'Socket.io', 'Redux', 'AWS'],
-    githubUrl: 'https://github.com',
+    tags: ['React Native', 'TypeScript', 'Zustand', 'RESTful APIs', 'React Query', 'CodePush', 'Atomic design'],
+    githubUrl: 'https://github.com/MinhThu100200',
+    liveUrl: '#',
+  },
+  {
+    title: 'Avakids',
+    description: 'An e-commerce platform providing parents with a convenient way to purchase high-quality products and services for children. Implemented Repack for building and followed mono front-end model.',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1470&auto=format&fit=crop',
+    tags: ['React Native', 'TypeScript', 'Redux Saga', 'GraphQL', 'Firebase', 'WebSocket'],
+    githubUrl: 'https://github.com/MinhThu100200',
+    liveUrl: '#',
+  },
+  {
+    title: 'Qua Tang VIP',
+    description: 'A loyalty app allowing customers to earn bonus points when placing orders or purchasing products. Features include chat module using WebSocket for customer support, and notifications via Firebase.',
+    image: 'https://images.unsplash.com/photo-1497681883844-82b4f0a359a4?q=80&w=1470&auto=format&fit=crop',
+    tags: ['React Native', 'TypeScript', 'Redux Thunk', 'GraphQL', 'WebSocket', 'Watermelon DB'],
+    githubUrl: 'https://github.com/MinhThu100200',
+    liveUrl: '#',
+  },
+  {
+    title: 'Xwork',
+    description: 'Application to assist staff members in conducting online activities, such as creating job tickets and signing contracts, using Repack for building with mono front-end architecture.',
+    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=1374&auto=format&fit=crop',
+    tags: ['React Native', 'JavaScript', 'Redux Thunk', 'RESTful APIs', 'Firebase', 'WebSocket'],
+    githubUrl: 'https://github.com/MinhThu100200',
     liveUrl: '#',
   },
 ];
@@ -98,7 +98,7 @@ const ProjectsSection = () => {
         
         <div className="text-center mt-12">
           <Button className="bg-primary hover:bg-primary/80" size="lg">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
+            <a href="https://github.com/MinhThu100200" target="_blank" rel="noopener noreferrer" className="flex items-center">
               <Github className="mr-2" size={18} />
               View More Projects on GitHub
             </a>

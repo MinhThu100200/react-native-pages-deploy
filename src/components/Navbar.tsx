@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Twitter } from 'lucide-react';
+import { Menu, X, Github, Linkedin, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <a href="#" className="text-2xl font-bold text-foreground hover:text-primary transition-colors">
-            <span className="gradient-text">RN</span> Dev
+            <span className="gradient-text">MT</span> Nguyen
           </a>
 
           {/* Desktop Navigation */}
@@ -80,14 +80,14 @@ const Navbar = () => {
 
           {/* Social Media Icons - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+            <a href="https://github.com/MinhThu100200" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+            <a href="https://linkedin.com/in/ntminhthu" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-              <Twitter size={20} />
+            <a href="https://minhthunt.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <ExternalLink size={20} />
             </a>
           </div>
 
@@ -138,14 +138,14 @@ const Navbar = () => {
               </button>
               {/* Social Media Icons - Mobile */}
               <div className="flex items-center space-x-4 pt-2">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+                <a href="https://github.com/MinhThu100200" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+                <a href="https://linkedin.com/in/ntminhthu" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                   <Linkedin size={20} />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-                  <Twitter size={20} />
+                <a href="https://minhthunt.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+                  <ExternalLink size={20} />
                 </a>
               </div>
             </nav>

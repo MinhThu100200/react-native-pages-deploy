@@ -14,20 +14,20 @@ const AboutSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Passionate React Native Developer</h3>
+            <h3 className="text-2xl font-semibold mb-6">Nguyen Thi Minh Thu</h3>
             <p className="text-muted-foreground mb-6">
-              With over 5 years of experience specializing in React Native development, 
-              I've built and deployed cross-platform mobile applications for clients 
-              ranging from startups to enterprise organizations.
+              Passionate and experienced React Native Developer with almost 3 years of hands-on experience, 
+              specializing in building scalable and user-friendly mobile applications. Proven ability to solve 
+              complex problems and a passion for staying updated with the latest technologies in mobile app development.
             </p>
             <p className="text-muted-foreground mb-6">
-              My approach combines technical expertise with a strong focus on user experience,
-              ensuring that the applications I build are not only functionally robust but also 
-              intuitive and enjoyable to use.
+              Currently working at CMC Global in HCM, Vietnam, focusing on developing and maintaining MemberShip 
+              and Community modules for Channel and Esports on a livestream application. Previously worked at 
+              Mobile World Investment Corporation (MWG) developing multiple mobile applications.
             </p>
             <p className="text-muted-foreground">
-              I'm dedicated to staying at the forefront of mobile development trends and best practices,
-              constantly refining my skills and exploring new technologies to deliver the best solutions.
+              Skilled in JavaScript, TypeScript, React Native, Redux (Thunk/Saga), Zustand, GraphQL, WebSocket, 
+              RESTful APIs, and Native Modules (Objective-C/Kotlin).
             </p>
           </div>
           
@@ -36,23 +36,23 @@ const AboutSection = () => {
               <CardContent className="p-6">
                 <Briefcase className="text-primary mb-4" size={28} />
                 <h4 className="text-lg font-semibold mb-2">Experience</h4>
-                <p className="text-muted-foreground">5+ years in React Native & mobile development</p>
+                <p className="text-muted-foreground">Almost 3 years in React Native & mobile development</p>
               </CardContent>
             </Card>
             
             <Card className="bg-secondary/50 border-primary/20 hover:border-primary transition-colors duration-300">
               <CardContent className="p-6">
                 <Award className="text-primary mb-4" size={28} />
-                <h4 className="text-lg font-semibold mb-2">Expertise</h4>
-                <p className="text-muted-foreground">Mobile architecture, UI/UX, state management</p>
+                <h4 className="text-lg font-semibold mb-2">Education</h4>
+                <p className="text-muted-foreground">HCM City University Technology and Education (GPA: 3.2/4)</p>
               </CardContent>
             </Card>
             
             <Card className="bg-secondary/50 border-primary/20 hover:border-primary transition-colors duration-300">
               <CardContent className="p-6">
                 <Calendar className="text-primary mb-4" size={28} />
-                <h4 className="text-lg font-semibold mb-2">Availability</h4>
-                <p className="text-muted-foreground">Open to freelance & full-time opportunities</p>
+                <h4 className="text-lg font-semibold mb-2">Languages</h4>
+                <p className="text-muted-foreground">Vietnamese (Native), English (Professional)</p>
               </CardContent>
             </Card>
             
@@ -60,7 +60,7 @@ const AboutSection = () => {
               <CardContent className="p-6">
                 <MapPin className="text-primary mb-4" size={28} />
                 <h4 className="text-lg font-semibold mb-2">Location</h4>
-                <p className="text-muted-foreground">San Francisco, CA | Remote</p>
+                <p className="text-muted-foreground">HCM, Vietnam | Remote</p>
               </CardContent>
             </Card>
           </div>

@@ -26,23 +26,23 @@ const skills = [
     ]
   },
   { 
-    category: 'UI/UX', 
+    category: 'State Management', 
     items: [
-      { name: 'Responsive Design', level: 90 },
-      { name: 'Animation', level: 85 },
-      { name: 'Styled Components', level: 88 },
-      { name: 'UI Libraries', level: 90 },
-      { name: 'Design Systems', level: 82 },
+      { name: 'Redux Saga', level: 90 },
+      { name: 'Redux Thunk', level: 90 },
+      { name: 'Zustand', level: 88 },
+      { name: 'React Query', level: 90 },
+      { name: 'GraphQL', level: 82 },
     ]
   },
   { 
     category: 'Other', 
     items: [
-      { name: 'Git & GitHub', level: 90 },
-      { name: 'CI/CD', level: 82 },
-      { name: 'Testing', level: 85 },
-      { name: 'RESTful APIs', level: 88 },
-      { name: 'GraphQL', level: 80 },
+      { name: 'Git & GitLab', level: 90 },
+      { name: 'CI/CD', level: 85 },
+      { name: 'Testing (Detox)', level: 85 },
+      { name: 'RESTful APIs', level: 90 },
+      { name: 'WebSocket', level: 85 },
     ]
   }
 ];
@@ -55,7 +55,7 @@ const SkillsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text inline-block">My Skills</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I've cultivated a diverse skill set that allows me to build complete, 
+            I've cultivated a diverse skill set focused on React Native development that allows me to build complete, 
             production-ready mobile applications from concept to deployment.
           </p>
         </div>
@@ -72,7 +72,7 @@ const SkillsSection = () => {
                         <span className="font-medium">{skill.name}</span>
                         <span className="text-muted-foreground">{skill.level}%</span>
                       </div>
-                      <Progress value={skill.level} className="h-2 bg-secondary" indicatorClassName="bg-primary" />
+                      <Progress value={skill.level} className="h-2 bg-secondary" />
                     </div>
                   ))}
                 </div>
@@ -85,24 +85,23 @@ const SkillsSection = () => {
           <h3 className="text-xl font-semibold mb-6">Technologies & Tools</h3>
           <div className="flex flex-wrap justify-center gap-3">
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">React Native</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Expo</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Redux</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">MobX</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">React Navigation</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">TypeScript</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">JavaScript</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Redux Saga</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Redux Thunk</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Zustand</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">React Query</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Firebase</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">GraphQL</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">REST APIs</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Jest</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">WebSocket</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">CodePush</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">AppCenter</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Repack</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Native Modules</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">GitLab</Badge>
             <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Detox</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">CI/CD</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">App Store</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Google Play</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Fastlane</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Styled Components</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Git</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">GitHub</Badge>
-            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Jira</Badge>
+            <Badge className="bg-secondary text-foreground hover:bg-primary transition-colors">Atomic Design</Badge>
           </div>
         </div>
       </div>
