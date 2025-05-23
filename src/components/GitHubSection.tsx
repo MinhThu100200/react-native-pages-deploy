@@ -1,69 +1,87 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Linkedin, Twitter, Instagram, Mail } from 'lucide-react';
 
 const GitHubSection = () => {
   return (
     <section id="github" className="py-16 md:py-24">
-      <div className="container max-w-5xl mx-auto px-4 md:px-6">
+      <div className="container max-w-4xl mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text inline-block">Links & Resources</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text inline-block">Connect With Me</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Check out my GitHub repositories and personal blog for more information about my work and thoughts on React Native development.
+            Feel free to reach out through any of these platforms. I'm always open to discussing new projects, ideas, or opportunities.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <Card className="bg-secondary/20 border-primary/20 hover:border-primary/50 transition-all duration-300">
-            <CardContent className="p-6 flex flex-col md:flex-row justify-between items-center">
-              <div className="flex items-center mb-4 md:mb-0">
-                <Github className="w-8 h-8 text-primary mr-4" />
-                <div>
-                  <h3 className="text-xl font-semibold">GitHub Projects</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Explore my open-source contributions and React Native projects
-                  </p>
-                </div>
-              </div>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
+            <CardContent className="p-6 flex items-center space-x-4">
+              <Github className="w-8 h-8 text-primary" />
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold">GitHub</h3>
                 <a 
                   href="https://github.com/MinhThu100200" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline flex items-center mt-1"
                 >
-                  <ExternalLink className="mr-2" size={16} />
-                  Visit GitHub
+                  @MinhThu100200
+                  <ExternalLink className="ml-1" size={14} />
                 </a>
-              </Button>
+              </div>
             </CardContent>
           </Card>
 
           <Card className="bg-secondary/20 border-primary/20 hover:border-primary/50 transition-all duration-300">
-            <CardContent className="p-6 flex flex-col md:flex-row justify-between items-center">
-              <div className="flex items-center mb-4 md:mb-0">
-                <ExternalLink className="w-8 h-8 text-primary mr-4" />
-                <div>
-                  <h3 className="text-xl font-semibold">Personal Blog</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Read my insights about React Native development and mobile apps
-                  </p>
-                </div>
+            <CardContent className="p-6 flex items-center space-x-4">
+              <Linkedin className="w-8 h-8 text-primary" />
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold">LinkedIn</h3>
+                <a 
+                  href="https://linkedin.com/in/ntminhthu" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline flex items-center mt-1"
+                >
+                  Nguyen Thi Minh Thu
+                  <ExternalLink className="ml-1" size={14} />
+                </a>
               </div>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
+            </CardContent>
+          </Card>
+
+          <Card className="bg-secondary/20 border-primary/20 hover:border-primary/50 transition-all duration-300">
+            <CardContent className="p-6 flex items-center space-x-4">
+              <ExternalLink className="w-8 h-8 text-primary" />
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold">Personal Blog</h3>
                 <a 
                   href="https://minhthunt.com" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline flex items-center mt-1"
                 >
-                  <ExternalLink className="mr-2" size={16} />
-                  Visit Blog
+                  minhthunt.com
+                  <ExternalLink className="ml-1" size={14} />
                 </a>
-              </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-secondary/20 border-primary/20 hover:border-primary/50 transition-all duration-300">
+            <CardContent className="p-6 flex items-center space-x-4">
+              <Mail className="w-8 h-8 text-primary" />
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold">Email</h3>
+                <a 
+                  href="mailto:mintu.ngth@gmail.com" 
+                  className="text-primary hover:underline flex items-center mt-1"
+                >
+                  mintu.ngth@gmail.com
+                </a>
+              </div>
             </CardContent>
           </Card>
         </div>
