@@ -1,13 +1,13 @@
 
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
 
 const GitHubSection = () => {
   return (
     <section id="github" className="py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container max-w-5xl mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text inline-block">Links & Resources</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
@@ -16,56 +16,52 @@ const GitHubSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-          <Card className="bg-secondary/20 border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-center">
-                <Github className="w-12 h-12 mx-auto mb-4 text-primary" />
-                GitHub Projects
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground mb-8">
-                Explore my open-source contributions and React Native projects. 
-                Feel free to check out my repositories and code examples.
-              </p>
-              
-              <Button className="bg-primary hover:bg-primary/80" size="lg">
+        <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+          <Card className="bg-secondary/20 border-primary/20 hover:border-primary/50 transition-all duration-300">
+            <CardContent className="p-6 flex flex-col md:flex-row justify-between items-center">
+              <div className="flex items-center mb-4 md:mb-0">
+                <Github className="w-8 h-8 text-primary mr-4" />
+                <div>
+                  <h3 className="text-xl font-semibold">GitHub Projects</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Explore my open-source contributions and React Native projects
+                  </p>
+                </div>
+              </div>
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <a 
                   href="https://github.com/MinhThu100200" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center"
                 >
-                  <Github className="mr-2" size={18} />
-                  View GitHub Profile
+                  <ExternalLink className="mr-2" size={16} />
+                  Visit GitHub
                 </a>
               </Button>
             </CardContent>
           </Card>
 
-          <Card className="bg-secondary/20 border-primary/20">
-            <CardHeader>
-              <CardTitle className="text-center">
-                <ExternalLink className="w-12 h-12 mx-auto mb-4 text-primary" />
-                Personal Blog
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground mb-8">
-                Visit my personal blog where I share insights about React Native development, 
-                mobile app trends, and technical tutorials.
-              </p>
-              
-              <Button className="bg-primary hover:bg-primary/80" size="lg">
+          <Card className="bg-secondary/20 border-primary/20 hover:border-primary/50 transition-all duration-300">
+            <CardContent className="p-6 flex flex-col md:flex-row justify-between items-center">
+              <div className="flex items-center mb-4 md:mb-0">
+                <ExternalLink className="w-8 h-8 text-primary mr-4" />
+                <div>
+                  <h3 className="text-xl font-semibold">Personal Blog</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Read my insights about React Native development and mobile apps
+                  </p>
+                </div>
+              </div>
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 <a 
                   href="https://minhthunt.com" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center"
                 >
-                  <ExternalLink className="mr-2" size={18} />
-                  Visit My Blog
+                  <ExternalLink className="mr-2" size={16} />
+                  Visit Blog
                 </a>
               </Button>
             </CardContent>
