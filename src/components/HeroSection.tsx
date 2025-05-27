@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ArrowDown, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToProjects = () => {
@@ -32,21 +32,13 @@ const HeroSection = () => {
             </div>
             
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Passionate about <strong className="text-primary">building high-performance web & mobile apps</strong> for the e-commerce and retail industry.
-            </p>
-            
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              I prioritize <strong className="text-primary">user experience</strong> and love optimizing product performance to create <strong className="text-primary">smooth, intuitive, and reliable applications</strong>.
+              Passionate about <strong className="text-primary">building high-performance React Native mobile apps with deep native integration</strong>. I focus on optimizing <strong className="text-primary">user experience, performance, and the aesthetic quality of every application</strong>.
             </p>
             
             <div className="flex flex-wrap items-center gap-8 mb-8 text-muted-foreground">
               <a href="mailto:mintu.ngth@gmail.com" className="flex items-center hover:text-primary transition-colors">
                 <Mail className="mr-2 h-5 w-5" />
                 mintu.ngth@gmail.com
-              </a>
-              <a href="tel:+84346279377" className="flex items-center hover:text-primary transition-colors">
-                <Phone className="mr-2 h-5 w-5" />
-                0346279377
               </a>
             </div>
             
@@ -58,6 +50,20 @@ const HeroSection = () => {
               >
                 View My Projects
               </Button>
+              
+              <a 
+                href="https://drive.google.com/file/d/1NQBalmLVWs8RHF1xwYHsgbqbEsTNcnD_/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                >
+                  Get My Resume
+                </Button>
+              </a>
               
               <div className="flex items-center gap-4">
                 <a 

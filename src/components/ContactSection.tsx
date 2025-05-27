@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Github, Mail, Linkedin, Twitter, MessageSquare } from 'lucide-react';
+import { Github, Mail, Linkedin } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -35,16 +35,6 @@ const ContactSection = () => {
                     </a>
                   </div>
                 </div>
-                
-                <div className="flex items-start">
-                  <MessageSquare className="mr-4 text-primary mt-1" size={20} />
-                  <div>
-                    <h4 className="font-medium">Discord</h4>
-                    <p className="text-muted-foreground">
-                      @reactnativedev
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
             
@@ -71,15 +61,6 @@ const ContactSection = () => {
                   className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/50 text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
                   <Linkedin size={20} />
-                </a>
-                
-                <a 
-                  href="https://twitter.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/50 text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <Twitter size={20} />
                 </a>
               </div>
             </div>
