@@ -9,53 +9,6 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="space-y-6">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-primary">Contact Information</h3>
-              <p className="text-muted-foreground mb-6">
-                Feel free to reach out through any of the following channels. 
-                I'm always open to discussing new projects, opportunities, or partnerships.
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <Mail className="mr-4 text-primary mt-1" size={20} />
-                  <div>
-                    <h4 className="font-medium">Email</h4>
-                    <a href="mailto:mintu.ngth@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      mintu.ngth@gmail.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-primary">Social Media</h3>
-              <p className="text-muted-foreground mb-6">
-                Connect with me on social media to see updates on my latest projects and tech articles.
-              </p>
-              
-              <div className="flex flex-wrap gap-4">
-                <a 
-                  href="https://github.com/MinhThu100200" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/50 text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <Github size={20} />
-                </a>
-                
-                <a 
-                  href="https://linkedin.com/in/ntminhthu" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/50 text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <Linkedin size={20} />
-                </a>
-              </div>
-            </div>
-            
             <div className="pt-6">
               <h3 className="text-xl font-semibold mb-4 text-primary">Availability</h3>
               <div className="bg-secondary/30 border border-primary/30 rounded-lg p-4">
