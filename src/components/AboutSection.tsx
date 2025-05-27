@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar, MapPin, Briefcase, Award, FileText, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -27,6 +26,7 @@ const AboutSection = () => {
             </div>
             
             {/* Experience Section */}
+            
             <div className="space-y-8">
               <h2 className="text-3xl font-bold mb-6">Experience</h2>
               
@@ -120,14 +120,6 @@ const AboutSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="bg-secondary/20 border-primary/20 transition-colors duration-300">
                 <CardContent className="p-6">
-                  <Briefcase className="text-primary mb-4" size={24} />
-                  <h3 className="text-xl font-semibold mb-2">Experience</h3>
-                  <p className="text-muted-foreground">Almost 3 years in React Native & mobile development</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-secondary/20 border-primary/20 transition-colors duration-300">
-                <CardContent className="p-6">
                   <MapPin className="text-primary mb-4" size={24} />
                   <h3 className="text-xl font-semibold mb-2">Location</h3>
                   <p className="text-muted-foreground">HCM, Vietnam</p>
@@ -145,7 +137,7 @@ const AboutSection = () => {
             
             <div className="flex flex-wrap gap-4">
               <Button className="bg-primary hover:bg-primary/80">
-                <a href="#" className="flex items-center">
+                <a href="https://drive.google.com/file/d/1NQBalmLVWs8RHF1xwYHsgbqbEsTNcnD_/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center">
                   <FileText className="mr-2" size={18} />
                   Get My Resume
                 </a>
