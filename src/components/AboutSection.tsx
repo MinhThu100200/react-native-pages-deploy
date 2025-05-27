@@ -24,12 +24,84 @@ const AboutSection = () => {
                 I prioritize <strong className="text-primary">user experience</strong> and love optimizing product 
                 performance to create <strong className="text-primary">smooth, intuitive, and reliable applications</strong>.
               </p>
+            </div>
+            
+            {/* Experience Section */}
+            <div className="space-y-8">
+              <h2 className="text-3xl font-bold mb-6">Experience</h2>
               
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Currently working at CMC Global in HCM, Vietnam, focusing on developing and maintaining MemberShip 
-                and Community modules for Channel and Esports on a livestream application. Previously worked at 
-                Mobile World Investment Corporation (MWG) developing multiple mobile applications.
-              </p>
+              {/* CMC Global Experience */}
+              <div className="bg-secondary/20 border border-primary/20 rounded-lg p-6">
+                <div className="flex items-start space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">C</span>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-2">
+                      <div>
+                        <h3 className="text-xl font-semibold">CMC Global</h3>
+                        <p className="text-primary font-medium">Mobile Developer</p>
+                      </div>
+                      <span className="text-muted-foreground text-sm">Jan 2022 — Present</span>
+                    </div>
+                    
+                    <div className="mt-4 space-y-3">
+                      <div>
+                        <p className="font-medium text-muted-foreground mb-2">Project: SOOP Livestream Application</p>
+                        <p className="text-muted-foreground mb-2">Technologies: React Native, TypeScript, Zustand, RESTful APIs, React Query, CodePush, Atomic design</p>
+                        <p className="font-medium text-muted-foreground mb-2">Contributions & Responsibilities:</p>
+                        <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
+                          <li>Developed and maintained cross-platform mobile applications using React Native, TypeScript, enhancing user experience and functionality across iOS and Android.</li>
+                          <li>Led development of the MemberShip and Community modules for the Channel and Esports sections.</li>
+                          <li>Implemented real-time chat and notification systems using WebSockets and push notifications.</li>
+                          <li>Collaborated with UI/UX teams, BA teams for improve performance and user experience.</li>
+                          <li>Integrated APIs, third-party libraries, and backend services to support dynamic app functionality.</li>
+                          <li>Optimized app performance, addressing bugs and improving load times to ensure a smooth user experience.</li>
+                          <li>Applied SOLID principles, Design Pattern, refactored and structured codebases to ensure scalability, enabling easy extension of features as the application grows.</li>
+                          <li>Followed Flux architecture principles, worked with state management framework, middleware such as Zustand, React Query.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* MWG Experience */}
+              <div className="bg-secondary/20 border border-primary/20 rounded-lg p-6">
+                <div className="flex items-start space-x-4 mb-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                    <span className="text-primary font-bold text-lg">M</span>
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-2">
+                      <div>
+                        <h3 className="text-xl font-semibold">MWG - Mobile World Investment Corporation</h3>
+                        <p className="text-primary font-medium">Mobile Developer</p>
+                      </div>
+                      <span className="text-muted-foreground text-sm">Mar 2020 — Dec 2021</span>
+                    </div>
+                    
+                    <div className="mt-4 space-y-4">
+                      <div>
+                        <p className="font-medium text-muted-foreground mb-2">Project: Avakids E-commerce Platform, Qua Tang VIP Loyalty App, Xwork Staff Management</p>
+                        <p className="text-muted-foreground mb-2">Technologies: React Native, TypeScript, Redux Saga, Redux Thunk, GraphQL, Firebase, WebSocket, Watermelon DB</p>
+                        <p className="font-medium text-muted-foreground mb-2">Contributions & Responsibilities:</p>
+                        <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
+                          <li>Developed and maintained multiple cross-platform mobile applications using React Native and TypeScript.</li>
+                          <li>Designed and implemented product browsing and shopping cart features for e-commerce platforms.</li>
+                          <li>Built loyalty points system and integrated WebSocket for real-time customer support chat.</li>
+                          <li>Implemented offline data persistence with Watermelon DB for enhanced user experience.</li>
+                          <li>Created contract signing feature with digital signature integration for staff management applications.</li>
+                          <li>Implemented job ticket creation and tracking workflow systems.</li>
+                          <li>Optimized app performance and reduced load times by 40% across all projects.</li>
+                          <li>Integrated Firebase for push notifications and real-time data synchronization.</li>
+                          <li>Collaborated with teams using mono front-end architecture and Repack for building.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             
             {/* Education Section */}
@@ -58,7 +130,7 @@ const AboutSection = () => {
                 <CardContent className="p-6">
                   <MapPin className="text-primary mb-4" size={24} />
                   <h3 className="text-xl font-semibold mb-2">Location</h3>
-                  <p className="text-muted-foreground">HCM, Vietnam | Remote</p>
+                  <p className="text-muted-foreground">HCM, Vietnam</p>
                 </CardContent>
               </Card>
               

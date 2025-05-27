@@ -1,28 +1,9 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/components/ui/use-toast';
 import { Github, Mail, Linkedin, Twitter, MessageSquare } from 'lucide-react';
 
 const ContactSection = () => {
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // In a real implementation, you would send the form data to a server
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    
-    // Reset form
-    (e.target as HTMLFormElement).reset();
-  };
-
   return (
     <section id="contact" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4 md:px-6">
@@ -35,74 +16,7 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
-          <Card className="bg-secondary/20 border-primary/20">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-6 text-primary">Send Me a Message</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
-                      Name
-                    </label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your name" 
-                      required 
-                      className="bg-secondary/30 border-primary/30 focus:border-primary"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="Your email" 
-                      required 
-                      className="bg-secondary/30 border-primary/30 focus:border-primary"
-                    />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium">
-                    Subject
-                  </label>
-                  <Input 
-                    id="subject" 
-                    placeholder="Subject of your message" 
-                    required 
-                    className="bg-secondary/30 border-primary/30 focus:border-primary"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Message
-                  </label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Your message" 
-                    required 
-                    rows={6}
-                    className="bg-secondary/30 border-primary/30 focus:border-primary resize-none"
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full bg-primary hover:bg-primary/80"
-                >
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-          
+        <div className="max-w-3xl mx-auto">
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-semibold mb-4 text-primary">Contact Information</h3>
@@ -116,8 +30,8 @@ const ContactSection = () => {
                   <Mail className="mr-4 text-primary mt-1" size={20} />
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <a href="mailto:contact@reactnativedev.com" className="text-muted-foreground hover:text-primary transition-colors">
-                      contact@reactnativedev.com
+                    <a href="mailto:mintu.ngth@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                      mintu.ngth@gmail.com
                     </a>
                   </div>
                 </div>
@@ -142,7 +56,7 @@ const ContactSection = () => {
               
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/MinhThu100200" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/50 text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -151,7 +65,7 @@ const ContactSection = () => {
                 </a>
                 
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://linkedin.com/in/ntminhthu" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 rounded-full bg-secondary/50 text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"

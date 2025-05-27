@@ -28,7 +28,6 @@ const HeroSection = () => {
             
             <div className="flex flex-wrap gap-3 my-6">
               <Badge className="bg-primary/20 text-primary hover:bg-primary/30 px-4 py-2 text-base">Mobile App</Badge>
-              <Badge className="bg-secondary/30 text-foreground hover:bg-secondary/40 px-4 py-2 text-base">Frontend Developer</Badge>
               <Badge className="bg-primary/20 text-primary hover:bg-primary/30 px-4 py-2 text-base">React Native</Badge>
             </div>
             
@@ -83,10 +82,11 @@ const HeroSection = () => {
           
           <div className="hidden lg:block">
             <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-primary/30">
-              {/* Profile image would go here */}
-              <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-                Profile Photo
-              </div>
+              <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6DwJ8KsyhZoR3NA30FjCIJ3xLIhtDszvwmMtmpxlqK4-GwP4Nom9slXiWaDZ3-d2L2lgI4u6xOM1x2VvZi0HdQtXFiZ1iV21_IOS0Pfy9mG5Pnki8eN4CXcmPG8LYHYGDVHaeHElykhnMVUpw_09UZizQP-wak23E3QuqGvi2GlaMHOgzVgoZ7rMq51c/s1776/IMG_8167.JPG"
+                alt="Nguyen Thi Minh Thu Profile Photo"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
