@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -48,22 +47,22 @@ const companyProjects = [
 // Personal projects data
 const personalProjects = [
   {
-    title: 'React Native Blog',
-    description: 'A personal blog focused on React Native development tips, best practices, and tutorials.',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1472&auto=format&fit=crop',
-    tags: ['Next.js', 'React', 'Tailwind CSS', 'Markdown', 'Vercel'],
-    responsibilities: 'Designed and developed the entire blog from scratch. Created content management system and SEO optimization.',
-    teamSize: 'Solo project',
-    duration: 'Jan 2023 - Present',
+    title: 'Survey App',
+    description: 'This app enables users to participate in surveys. Once completed and approved by staff, users earn points that can be exchanged for vouchers, discounts, or gifts.',
+    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1470&auto=format&fit=crop',
+    tags: ['React Native', 'TypeScript', 'Redux Toolkit', 'Redux Thunk', 'CodePush', 'AppCenter', 'TestFlight', 'Axios', 'RESTful APIs'],
+    responsibilities: 'Setting up and configuring key app modules such as Redux Thunk, Redux Toolkit, API client integration, build pipeline, gift exchange features, and authentication systems.',
+    teamSize: '2 developers',
+    duration: 'Jan 2024 - June 2024',
   },
   {
-    title: 'Mobile Dev Tools',
-    description: 'A collection of developer tools and utilities for React Native and mobile application development.',
-    image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=1470&auto=format&fit=crop',
-    tags: ['React Native', 'TypeScript', 'CLI Tools', 'Node.js'],
-    responsibilities: 'Created CLI tools for automating common development tasks. Published multiple packages to npm.',
-    teamSize: 'Solo project',
-    duration: 'Jun 2022 - Present',
+    title: 'PomoAI',
+    description: 'PomoAI supports users in maintaining focus by reducing social media distractions and uses AI to swiftly generate schedules and plans to save time.',
+    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=1374&auto=format&fit=crop',
+    tags: ['React Native', 'TypeScript', 'Zustand', 'React Query', 'CodePush', 'AppCenter', 'TestFlight', 'Axios', 'RESTful APIs', 'Firebase', 'Native Modules', 'Gemini API'],
+    responsibilities: 'Sole developer of core app features, authentication, onboarding, and CI/CD automation. Delivered AI-driven task generation and user productivity tools.',
+    teamSize: '1 developer',
+    duration: 'May 2025 - Present',
   },
 ];
 
