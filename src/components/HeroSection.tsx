@@ -13,16 +13,15 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden pt-16">
-      <div className="absolute inset-0 bg-hero-pattern -z-10"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 to-background/30 -z-10"></div>
+    <section className="min-h-screen flex items-center relative overflow-hidden pt-16 code-pattern">
+      <div className="absolute inset-0 bg-gradient-to-b from-background/95 to-background/80 -z-10"></div>
       
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-24 z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="block">Hi, I'm</span>
-              <span className="gradient-text block mt-2">Nguyen Thi Minh Thu</span>
+              <span className="gradient-text block mt-2 typing-name">Nguyen Thi Minh Thu</span>
               <span className="text-xl md:text-2xl block mt-4 font-normal">👋</span>
             </h1>
             

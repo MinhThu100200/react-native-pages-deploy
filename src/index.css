@@ -97,4 +97,55 @@
   .code-operator {
     color: #56B6C2;
   }
+
+  .code-pattern {
+    position: relative;
+    background-color: var(--background);
+    overflow: hidden;
+  }
+
+  .code-pattern::before {
+    content: 'import React from "react";\nconst Portfolio = () => {\n  const skills = ["React Native", "TypeScript"];\n  return (\n    <div className="developer">\n      <h1>Mobile Developer</h1>\n      <Skills data={skills} />\n    </div>\n  );\n};\n\nexport default Portfolio;';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    white-space: pre;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: hsl(var(--muted-foreground));
+    opacity: 0.03;
+    pointer-events: none;
+    padding: 2rem;
+    overflow: hidden;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .typing-name {
+    overflow: hidden;
+    border-right: 3px solid hsl(var(--primary));
+    white-space: nowrap;
+    animation: typing 3s steps(20, end), blink-caret 1s step-end infinite;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: hsl(var(--primary)); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(0.5deg); }
+    50% { transform: translateY(-5px) rotate(-0.5deg); }
+    75% { transform: translateY(-15px) rotate(0.3deg); }
+  }
 }
