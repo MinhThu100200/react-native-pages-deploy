@@ -1,105 +1,68 @@
-
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 
 const HeroSection = () => {
-  const scrollToProjects = () => {
-    const projectsSection = document.getElementById('projects');
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden pt-16">
-      <div className="absolute inset-0 bg-hero-pattern -z-10"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-background/70 to-background/30 -z-10"></div>
-      
-      <div className="container mx-auto px-4 md:px-6 py-12 md:py-24 z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="block">Hi, I'm</span>
-              <span className="gradient-text block mt-2">Nguyen Thi Minh Thu</span>
-              <span className="text-xl md:text-2xl block mt-4 font-normal">👋</span>
+    <section className="relative min-h-screen flex items-center justify-center pt-20">
+      <div className="container mx-auto px-4 md:px-6 text-center">
+        <div className="max-w-3xl mx-auto space-y-8">
+          {/* Profile Image */}
+          <div className="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-2xl md:text-4xl font-bold text-primary-foreground shadow-xl">
+            MT
+          </div>
+
+          {/* Main Heading */}
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+              Nguyen Thi <span className="text-primary">Minh Thu</span>
             </h1>
-            
-            <div className="flex flex-wrap gap-3 my-6">
-              <Badge className="bg-primary/20 text-primary hover:bg-primary/30 px-4 py-2 text-base">Mobile App</Badge>
-              <Badge className="bg-primary/20 text-primary hover:bg-primary/30 px-4 py-2 text-base">React Native</Badge>
-            </div>
-            
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Passionate about <strong className="text-primary">building high-performance React Native mobile apps with deep native integration</strong>. I focus on optimizing <strong className="text-primary">user experience, performance, and the aesthetic quality of every application</strong>.
-            </p>
-            
-            <div className="flex flex-wrap items-center gap-8 mb-8 text-muted-foreground">
-              <a href="mailto:mintu.ngth@gmail.com" className="flex items-center hover:text-primary transition-colors">
-                <Mail className="mr-2 h-5 w-5" />
-                mintu.ngth@gmail.com
-              </a>
-            </div>
-            
-            <div className="flex flex-wrap items-center gap-4">
-              <Button 
-                onClick={scrollToProjects}
-                size="lg" 
-                className="bg-primary hover:bg-primary/80 text-primary-foreground"
-              >
-                View My Projects
-              </Button>
-              
-              <a 
-                href="https://drive.google.com/file/d/1NQBalmLVWs8RHF1xwYHsgbqbEsTNcnD_/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                >
-                  Get My Resume
-                </Button>
-              </a>
-              
-              <div className="flex items-center gap-4">
-                <a 
-                  href="https://github.com/MinhThu100200" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  <Github size={24} />
-                </a>
-                <a 
-                  href="https://linkedin.com/in/ntminhthu" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  <Linkedin size={24} />
-                </a>
-              </div>
-            </div>
+            <h2 className="text-xl md:text-2xl text-primary font-medium">
+              React Native Developer.
+            </h2>
           </div>
-          
-          <div className="hidden lg:block">
-            <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-primary/30">
-              <img 
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6DwJ8KsyhZoR3NA30FjCIJ3xLIhtDszvwmMtmpxlqK4-GwP4Nom9slXiWaDZ3-d2L2lgI4u6xOM1x2VvZi0HdQtXFiZ1iV21_IOS0Pfy9mG5Pnki8eN4CXcmPG8LYHYGDVHaeHElykhnMVUpw_09UZizQP-wak23E3QuqGvi2GlaMHOgzVgoZ7rMq51c/s1776/IMG_8167.JPG"
-                alt="Nguyen Thi Minh Thu Profile Photo"
-                className="w-full h-full object-cover"
-              />
-            </div>
+
+          {/* Description */}
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            I thrive on <span className="text-primary font-medium">creating scalable, user-friendly mobile applications</span> that are not just functional but also aesthetically stunning.
+          </p>
+
+          {/* Social Links */}
+          <div className="flex justify-center space-x-4 pt-6">
+            <a 
+              href="https://linkedin.com/in/ntminhthu" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-primary transition-colors p-3 rounded-lg hover:bg-secondary/50"
+              aria-label="Follow on LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a 
+              href="https://github.com/MinhThu100200" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-primary transition-colors p-3 rounded-lg hover:bg-secondary/50"
+              aria-label="Follow on GitHub"
+            >
+              <Github size={20} />
+            </a>
+            <a 
+              href="https://minhthunt.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-primary transition-colors p-3 rounded-lg hover:bg-secondary/50"
+              aria-label="Follow on Website"
+            >
+              <ExternalLink size={20} />
+            </a>
+            <a 
+              href="mailto:mintu.ngth@gmail.com" 
+              className="text-muted-foreground hover:text-primary transition-colors p-3 rounded-lg hover:bg-secondary/50"
+              aria-label="Follow on Email"
+            >
+              <Mail size={20} />
+            </a>
           </div>
-        </div>
-        
-        <div className="animate-bounce mt-16 text-muted-foreground hidden md:block">
-          <ArrowDown className="mx-auto" size={32} />
-          <span className="sr-only">Scroll down</span>
         </div>
       </div>
     </section>
